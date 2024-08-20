@@ -39,7 +39,7 @@ function Contact() {
                     <br/>
 
                     <li className="about-activity">
-                      <ImLocation /> Address : Shivaji Boy's Hostel CSJM University kanpur
+                      <ImLocation /> Address : Kanpur, Uttar Pradesh, India
                     </li>
 
                   </ul>

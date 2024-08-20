@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import myImg from "../../Assets/avatar.svg";
+import myImg from "../../Assets/avata.jpg";
 import Tilt from "react-parallax-tilt";
 import {
   AiFillGithub,
@@ -8,6 +8,7 @@ import {
   AiFillInstagram,
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
+import ScrollAnimation from 'react-animate-on-scroll';
 
 function Home2() {
   return (
@@ -19,13 +20,13 @@ function Home2() {
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body">
-              I am a 3rd year undergraduate at UIET Kanpur
+              I am a final year undergraduate at  Kanpur University
               <br />
               <br />
               I have done <b className="purple">Web Developer Internship</b> at <b className="purple">Bambhari</b>.
               <br />
               <br />
-              I love <b className="purple"> Web Development </b> and making projects
+              I love <b className="purple"> Web Development </b> and building projects
               <br />
               <br />
               My field of Interest's are building new &nbsp;
@@ -34,22 +35,13 @@ function Home2() {
               </i>
               <br />
               <br />
-              I am a <b className="purple">tech geek</b> and always learn and explore things related to <i><b className="purple">Technology and Softwares</b></i>.
-              <br />
-              <br />
-              I also have knowledge of <b className="purple">Python library such as Numpy Pandas </b>.
-              <br />
-              <br />
-              Currently I'm learning different <i><b className="purple">TypeScript and Next JS</b></i> to make an application fast and scalable.
-              <br />
-              <br />
-              My hobbies are watching <i><b className="purple">movies and reading novel book.</b> </i> 
+              I am a <b className="purple">tech geek</b> and always learn and explore things related to <b className="purple">Technology and Softwares</b>.
               <br />
             </p>
           </Col>
           <Col md={4} className="myAvtar">
             <Tilt>
-              <img src={myImg} className="img-fluid" alt="avatar" />
+              <img src={myImg} style = {{borderRadius: "50%"}} className="img-fluid" alt="avatar" />
             </Tilt>
           </Col>
         </Row>
@@ -104,6 +96,7 @@ function Home2() {
           </Col>
         </Row>
       </Container>
+     
     </Container>
   );
 }
